@@ -1,0 +1,80 @@
+Therearetwomain modelsdealingwithfeatureselection:filtermethodsandwrapper methods(KohaviandJohn,1997).
+
+thecombinations (discretizer+filter+classifier)exhibitingbetterperformanceresultswereappliedtothemultipleclassapproach.A
+
+duration -> int 
+**protocol_type -> object
+*service -> object
+flag -> object
+*src_bytes -> int
+dst_bytes -> int
+land -> bool (0 no, 1 yes) aneh
+wrong_fragment -> int
+urgent -> int
+*hot -> int
+num_failed_logins -> int
+logged_in -> bool 
+num_compromised -> int
+root_shell -> bool, note dia ada value 99999 aneh
+su_attempted -> int (cat[0,1,2,99999])
+num_root -> int
+num_file_creations -> int
+num_shells -> int (cat['0' '99999' '*' '1' '2'])
+num_access_files -> int, note typically < 10, but it has 99999
+num_outbound_cmds -> int, note ['0' '*'] berarti pengganti * == 0
+is_host_login 	: bool
+is_guest_login 	: bool
+count 		: int
+srv_count 	: int
+serror_rate	: float
+srv_serror_rate	: float
+rerror_rate	: float
+srv_rerror_rate	: float
+same_srv_rate	: float
+diff_srv_rate	: float
+srv_diff_host_rate 	: float
+dst_host_count		: int
+dst_host_srv_count 	: int
+dst_host_same_srv_rate 	: float
+dst_host_diff_srv_rate 	: float
+dst_host_same_src_port_rate : float
+dst_host_srv_diff_host_rate : float
+dst_host_serror_rate 	: float
+dst_host_srv_serror_rate: float
+dst_host_rerror_rate	: float
+dst_host_srv_rerror_rate: float
+type_of_attack	: object
+
+*diff_srv_rate
+*dst_host_count 
+**dst_host_srv_count 
+**dst_host_same_src_port_rate 
+*dst_host_srv_diff_host_rate
+*dst_host_serror_rate 
+*dst_host_srv_rerror_rate 
+
+
+YG PENTING MENURUT JURNAL 1
+The  validation  was  carried  out  using  10-fold  Cross-validation  where  the  dataset  was divided into ten parts, one part being the setting data and the other part being the training data. The performance of the Model was further compared using decision tree classification without feature  selection  filter-based  or  wrapper-based  (DT)  between  feature  selection  filter-based information gain and decision tree (IG+DT), feature selection filter-based information gain and feature  selection  wrapper-based  forward  selection  with  learning  decision  tree  algorithm (IG+FS+DT). In addition, comparison was also conducted between the feature selection filter based  on information  gain  and feature  selection wrapper-based  forward selection, as well as backward  Elimination  and  learning  decision  tree  algorithm  (IG+FS+BE+DT),  and  feature selection filter-based information gain with feature selection wrapper-based optimize selection and decision tree learning algorithm (IG+OS+DT).
+
+**protocol_type -> object
+*service -> object
+*src_bytes -> int
+*hot -> int
+*diff_srv_rate
+*dst_host_count 
+**dst_host_srv_count 
+**dst_host_same_src_port_rate 
+*dst_host_srv_diff_host_rate
+*dst_host_serror_rate 
+*dst_host_srv_rerror_rate 
+
+
+ In practice, you might start with filtering methods to quickly identify relevant features and then use wrapper methods for fine-tuning the feature subset if needed. Additionally, you can employ techniques like cross-validation to evaluate the impact of feature selection on model performance and make an informed choice.
+
+
+
+
+
+
+ 
