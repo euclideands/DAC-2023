@@ -1,0 +1,50 @@
+Kolom 'num_compromised' berkorelasi dengan kolom-kolom berikut:
+['num_root']
+Nilai Korelasi:
+num_root: 1.00
+
+Kolom 'num_root' berkorelasi dengan kolom-kolom berikut:
+['num_compromised']
+Nilai Korelasi:
+num_compromised: 1.00
+
+Kolom 'serror_rate' berkorelasi dengan kolom-kolom berikut:
+['srv_serror_rate', 'dst_host_serror_rate', 'dst_host_srv_serror_rate', 'flag_S0']
+Nilai Korelasi:
+srv_serror_rate: 0.97
+dst_host_serror_rate: 0.96
+dst_host_srv_serror_rate: 0.97
+flag_S0: 0.96
+
+Kolom 'srv_serror_rate' berkorelasi dengan kolom-kolom berikut:
+['serror_rate', 'dst_host_serror_rate', 'dst_host_srv_serror_rate', 'flag_S0']
+Nilai Korelasi:
+serror_rate: 0.97
+dst_host_serror_rate: 0.98
+dst_host_srv_serror_rate: 0.99
+flag_S0: 0.98
+
+Kolom 'dst_host_serror_rate' berkorelasi dengan kolom-kolom berikut:
+['serror_rate', 'srv_serror_rate', 'dst_host_srv_serror_rate', 'flag_S0']
+Nilai Korelasi:
+serror_rate: 0.96
+srv_serror_rate: 0.98
+dst_host_srv_serror_rate: 0.98
+flag_S0: 0.98
+
+Kolom 'dst_host_srv_serror_rate' berkorelasi dengan kolom-kolom berikut:
+['serror_rate', 'srv_serror_rate', 'dst_host_serror_rate', 'flag_S0']
+Nilai Korelasi:
+serror_rate: 0.97
+srv_serror_rate: 0.99
+dst_host_serror_rate: 0.98
+flag_S0: 0.99
+
+Kolom 'flag_S0' berkorelasi dengan kolom-kolom berikut:
+['serror_rate', 'srv_serror_rate', 'dst_host_serror_rate', 'dst_host_srv_serror_rate']
+Nilai Korelasi:
+serror_rate: 0.96
+srv_serror_rate: 0.98
+dst_host_serror_rate: 0.98
+dst_host_srv_serror_rate: 0.99
+
