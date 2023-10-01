@@ -1,0 +1,15 @@
+Kolom 'serror_rate' berkorelasi dengan kolom-kolom berikut:
+srv_serror_rate: 0.99
+dst_host_serror_rate: 0.92
+dst_host_srv_serror_rate: 0.99
+
+Kolom 'srv_serror_rate' berkorelasi dengan kolom-kolom berikut:
+serror_rate: 0.99
+dst_host_serror_rate: 0.92
+dst_host_srv_serror_rate: 0.99
+
+Kolom 'dst_host_srv_serror_rate' berkorelasi dengan kolom-kolom berikut:
+serror_rate: 0.99
+srv_serror_rate: 0.99
+dst_host_serror_rate: 0.92
+

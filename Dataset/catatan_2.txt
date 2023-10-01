@@ -1,0 +1,51 @@
+data cleansing
+1. remove nan value
+2. imputing value in unique character while change into the right data type
+3. 
+
+
+svm, decision tree, dnn, lstm/bi-lstm
+
+
+For this purpose, a new and intelligent
+feature selection algorithm called dynamic recursive feature
+selection algorithm (DRFSA) has been proposed in this study,
+which selects the relevant features to form the data set. This feature
+selection technique makes intelligent decisions by performing
+temporal and fuzzy reasoning through the firing of fuzzy temporal
+rules. 
+
+
+Overview:
+Input: Dataset (DS), Original Feature Set (FS), Number of Features (N), Threshold (TH).
+Output: Ranked Feature Set (RFS).
+Objective: To recursively and dynamically select the optimal number of features to maximize classification accuracy.
+Steps:
+Initialization: Start with an empty set for RFS.
+Input Reading: Read the dataset, original feature set, number of features, and threshold.
+Feature Ranking and Addition:
+Split the dataset and compute the rank of features using Spearman's rank correlation coefficient.
+If the rank of a feature is above the threshold, add it to RFS.
+This step is done recursively.
+Classification and Accuracy Computation:
+Perform classification using SVM on RFS and compute the accuracy (A1).
+Temporal Constraints and Fuzzy Rules Application: Apply temporal constraints and fuzzy rules to the features.
+Reclassification and Accuracy Check:
+Perform classification again using SVM and compute the new accuracy (A2).
+If A1 >= A2, return RFS; else continue.
+Decision Tree Classification: Apply a Decision Tree Classifier using RFS.
+Accuracy Comparison and Iteration: If the new accuracy is not better than the previous iteration, stop; else, go back to step 3.
+End: The algorithm terminates when no improvement in accuracy is observed.
+Results:
+When tested on the KDD Cup dataset, the proposed DRFSA algorithm reduced the number of features from 18 to 15 and increased classification accuracy from 96% to 99.5%.
+Fuzzy Reasoning:
+Fuzzy rules are used to model uncertainty and make decisions on the kind of intrusion or normal behavior.
+The algorithm utilizes triangular membership functions for fuzzy inference, enabling effective decision-making under uncertainty.
+Fuzzy rules are written in an If…Then format (e.g., If cost is high & time is peak hours & behavior is bad then the chance of intrusion is a definite intruder).
+Conclusion:
+The DRFSA algorithm, with its dynamic and recursive nature, Spearman’s rank correlation coefficient, and incorporation of fuzzy reasoning and temporal constraints, aims to provide a robust method for feature selection. By adaptively adjusting the selected features and optimizing for classification accuracy, it shows improved results on the tested datasets. The use of fuzzy rules and temporal constraints further enhances the ability of the algorithm to handle uncertainty and time-related data patterns.
+
+
+membandingkan multiclass classification dengan MLP
+
+DNN, RNN, LSTM, HYBRID OF DNN AND CNN
