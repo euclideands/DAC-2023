@@ -1,3 +1,4 @@
+
 Therearetwomain modelsdealingwithfeatureselection:filtermethodsandwrapper methods(KohaviandJohn,1997).
 
 thecombinations (discretizer+filter+classifier)exhibitingbetterperformanceresultswereappliedtothemultipleclassapproach.A
